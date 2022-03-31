@@ -1,16 +1,19 @@
-#server:
-#  port: 9904
+server:
+  port: 9904
 #  servlet:
 #    context-path: /gvp/ops
 
 spring:
-  # 环境 dev|test|prod
-  profiles:
-    active: dev
+#  # 环境 dev|test|prod
+#  profiles:
+#    active: dev
   application:
     name: springboot_nacos
-  resources:
-    add-mappings: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
 
 
 #mybatis

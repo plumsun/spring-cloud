@@ -1,9 +1,8 @@
 package com.demo;
 
-import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @Description:
@@ -11,10 +10,11 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @Author: LiHaoHan
  * @Program: com.demo.controller
  */
+@MapperScan(basePackages = {"com.demo.*"})
+// @EnableDiscoveryClient
 @SpringBootApplication
-@EnableDiscoveryClient
 //${prefix}-${spring.profiles.active}.${file-extension}
-@NacosPropertySource(dataId = "springboot_nacos-dev.1.0", autoRefreshed = true)
+// @NacosPropertySource(dataId = "springboot_nacos-dev.1.0", autoRefreshed = true)
 public class SpringBootDemoApplication {
 
     public static void main(String[] args) {
