@@ -1,0 +1,15 @@
+server:
+  port: 10086  # 注册中心端口
+spring:
+  application:
+    name: eureka  # 每个服务都要起个名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka # 注册中心的地址
+#      defaultZone: http://localhost:10087/eureka,http://localhost:10086/eureka # 注册中心的地址
+    register-with-eureka: false # 默认会将自己的服务信息 注册到 指定注册中心  这里自己注册自己没必要 所以关闭
+    fetch-registry: false # 默认会从注册中心获取服务信息
+  server:
+    eviction-interval-timer-in-ms: 60000 # 默认eureka服务端 每隔60s会扫描一次 服务列表， 剔除出那些失效的服务
+    enable-self-preservation: false # 默认为true开启自我保护 开发时可以设置为false

@@ -1,0 +1,24 @@
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+spring:
+  application:
+    name: user
+  rabbitmq:
+    host: localhost
+    port: 5672
+  cloud:
+    config:
+      discovery:
+        enabled: true # 从注册中心 寻找 配置中心 的服务
+        service-id: config # 配置中心的服务名称
+      label: master # 分支的名称
+      name: user  # 应用的名称   /{label}/{application}-{profile}.yml
+      profile: dev # 环境名称
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 暴露refresh接口

@@ -1,0 +1,36 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+    registry-fetch-interval-seconds: 30
+user:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+ribbon:
+  eager-load:
+    enabled: true
+    clients: user   # 多个服务使用 "," 分割
+  ConnectTimeout: 500 # 连接超时时长
+  ReadTimeout: 1000 # 数据通信超时时长
+  MaxAutoRetriesNextServer: 1 # 切换重试多少次服务   user = 2
+  MaxAutoRetries: 1 # 当前服务器的重试次数    幂等性  []
+  OkToRetryOnAllOperations: false # 是否对所有的请求方式都重试
+hystrix:
+  command:
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 2000
+      circuitBreaker:
+        errorThresholdPercentage: 50 # 触发熔断错误比例阈值，默认值50%
+        sleepWindowInMilliseconds: 10000 # 熔断后休眠时长，默认值5秒
+        requestVolumeThreshold: 10 # 触发熔断的最小请求次数，默认20
+feign:
+  hystrix:
+    enabled: true
+logging:
+  level:
+    com.itheima: debug

@@ -1,0 +1,28 @@
+#server:
+#  port: 8081
+#spring:
+#  application:
+#    name: user
+#  datasource:
+#    url: jdbc:mysql://192.168.200.130:3306/cloud_user
+#    username: root
+#    password: root
+#    driver-class-name: com.mysql.jdbc.Driver
+#mybatis:
+#  type-aliases-package: com.itheima.user.pojo
+#  configuration:
+#    map-underscore-to-camel-case: true
+#logging:
+#  level:
+#    com.itheima: debug
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:10086/eureka
+##      defaultZone: http://localhost:10086/eureka,http://localhost:10087/eureka
+#  instance:
+#    prefer-ip-address: true  # 注册的地址IP优先
+#    ip-address: 127.0.0.1  # 注册信息的host字段会使用: 127.0.0.1
+#    instance-id: 127.0.0.1:${spring.application.name}:${server.port}
+#    lease-renewal-interval-in-seconds: 2 # 客户端给注册中心 发送心跳的间隔时间
+#    lease-expiration-duration-in-seconds: 5 # 如果没有按照发送心跳，会在90s后服务失效

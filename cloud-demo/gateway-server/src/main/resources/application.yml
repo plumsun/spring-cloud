@@ -1,0 +1,45 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: gateway
+  redis:
+    host: 192.168.200.130
+  cloud:
+    gateway:
+      routes:
+        - id: user  # 路由的唯一标识 id
+#          uri: http://localhost:8081  # 如果满足此路由 要转发的路径
+          uri: lb://user  # loadBanlance
+          predicates: # 断言(判断是否满足此路由的条件,至少要有1个)
+            - Path=/user-api/** # 查看路径是否满足条件
+          filters: # 过滤项
+            - AddRequestHeader=name,itheima
+            - StripPrefix=1 # 忽略第一部分路径  /user-api/user/itcast ==>  /user/itcast
+        - id: consumer
+          uri: lb://consumer
+          predicates:
+            - Path=/consumer/**
+      default-filters: # 默认过滤器 ,对所有路由都有效
+        - name: Hystrix # 指定过滤工厂名称
+          args: # 指定过滤的参数
+            name: fallbackcmd  # hystrix的指令名
+            fallbackUri: forward:/fallbackTest # 失败后的跳转路径
+        - name: RequestRateLimiter #请求数限流 名字不能随便写
+          args:
+            key-resolver: "#{@ipKeyResolver}" # 指定一个key生成器
+            redis-rate-limiter.replenishRate: 1 # 生成令牌的速率
+            redis-rate-limiter.burstCapacity: 3 # 桶的容量
+      globalcors:
+        cors-configurations:
+          '[/**]': # 匹配所有请求
+            allowedOrigins: "*" #跨域处理 允许所有的域
+            allowedMethods: # 支持的方法
+              - GET
+              - POST
+              - PUT
+              - DELETE
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
