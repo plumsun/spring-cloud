@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: demo
+#  cloud:
+#    nacos:
+#      discovery:
+#        username: nacos
+#        password: nacos
+#        namespace: 5d9179d9-85b1-483d-a55a-a62a3732b4c4
+#        server-addr: localhost:8848
+  redis:
+    host: 124.221.161.153 #Redis服务器地址
+    port: 6379 #Redis服务器连接端口
+    password: root
+server:
+  port: 8003
