@@ -1,1 +1,3 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration= org.feign.autoconfiger.FeignConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.feign.autoconfiger.FeignConfiguration,\
+org.feign.client.TcpSocketServer
