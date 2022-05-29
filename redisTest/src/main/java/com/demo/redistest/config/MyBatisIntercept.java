@@ -10,12 +10,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Properties;
 
-/**
- * @description:
- * @date: 2022/5/15 15:22
- * @author: LiHaoHan
- * @program: com.demo.redistest.config
- */
+
 @Component
 @Intercepts({@Signature(
         type= Executor.class,

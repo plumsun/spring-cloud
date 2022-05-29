@@ -5,12 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @description:
- * @date: 2022/5/15 15:22
- * @author: LiHaoHan
- * @program: com.demo.redistest.config
- */
+
 @Configuration
 public class MyBatisConfig {
 
