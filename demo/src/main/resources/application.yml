@@ -14,3 +14,9 @@ spring:
     password: root
 server:
   port: 8003
+
+
+#改变ribbon负载均衡，项目名.ribbon.拦截器.策略模式
+#demo:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule

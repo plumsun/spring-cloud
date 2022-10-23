@@ -10,11 +10,17 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @author: LiHaoHan
  * @program: com.demo
  */
-@EnableFeignClients
-// @EnableDiscoveryClient
 @SpringBootApplication
+//includeFilters指定条件
+//TODO @ComponentScan(value = "com.demo.controller",
+//         includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, classes = {Component.class})},
+//         useDefaultFilters = false)
+@EnableFeignClients(basePackages = "com.demo.remote")
+// @EnableDiscoveryClient
 public class App {
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
     }
 }
+
+

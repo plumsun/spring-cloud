@@ -2,8 +2,11 @@ package com.demo.controller;
 
 import com.demo.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -27,9 +30,12 @@ public class TestController {
     @Autowired
     private TestService testService;
 
+    @Autowired
+    Environment environment;
+
     @GetMapping("demo1")
     public String demo1(){
-        return this.testService.feignTest1();
+        return this.environment.getProperty("file");
     }
 
     @GetMapping("demo2")
@@ -59,6 +65,8 @@ public class TestController {
         return stringRedisTemplate.opsForSet().members(key).toString();
     }
 
+    //TODO 改变事务的传播行为
+    @Transactional(propagation = Propagation.NOT_SUPPORTED,rollbackFor = Exception.class)
     @GetMapping("hash")
     public String hash(@RequestParam String key,@RequestParam String key3,@RequestBody HashMap<String,String> map){
         Set<Map.Entry<String, String>> entries = map.entrySet();
