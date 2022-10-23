@@ -1,0 +1,87 @@
+server:
+  port: 9909
+  servlet:
+    context-path: /gvp/mixStream
+
+spring:
+  # jackson时间格式化
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  #  resources:
+  #    add-mappings: false
+  main:
+    #允许存在多个Feign调用相同Service的接口
+    allow-bean-definition-overriding: true
+  data:
+    mongodb:
+      uri: mongodb://m_streamhub:bR9xBVv0IJwtE3WJ2nvf@10.183.54.192:27017/streamhubdb?minpoolsize=5&maxidletimems=3000
+
+
+redisson:
+  address: redis://10.186.51.101:6380
+  address1: redis://10.183.54.191:6380
+  address2: redis://10.183.54.192:6380
+  password: Xf@3aQx2_}y}
+
+
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 15000
+        read-timeout: 32000
+  hystrix:
+    enabled: true
+  httpclient:
+    enabled: true
+    max-connections: 4000
+    max-connections-per-route: 500
+    time-to-live: 120
+    time-to-live-unit: seconds
+    connection-timeout: 500
+    socket-timeout: 2500
+hystrix:
+  threadpool:
+    default:
+      coreSize: 1000
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+ribbon:
+  ReadTimeout: 2000
+  ConnectTimeout: 500
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+
+
+migu:
+  version: v1.3
+  authorization: eyJhcHBJZCI6IjEyMzQ1Njc4Iiwic2lnbmF0dXJlIjoiTldGallXTXlZMkU0WVRFMFpXRmhNekExTVRZeVpqa3laRFl4TjJZNVpEZGtZek01TlRjME5tUXdabVkzTTJNeU1qZGhNbUkxWldObE1EZGpNMlEwWkE9PSIsImV4cGlyZVRpbWUiOjE2MjQzNDY4NzcwNzZ9
+  mixStream:
+    globalShim: rtmp://devlivepull.migucloud.com/live/4DI2JO07_C0
+    createMixTask: http://[$IP]/${migu.version}/gvps/createTask
+    startMixTask: http://[$IP]/${migu.version}/gvps/startTask/{gtaskId}
+    pauseMixTask: http://[$IP]/${migu.version}/gvps/pauseTask/{gtaskId}
+    delMixTask: http://[$IP]/${migu.version}/gvps/stopTask/{gtaskId}
+    queryMixTask: http://[$IP]/${migu.version}/gvps/queryTask/{gtaskId}
+    switchMixTask: http://[$IP]/${migu.version}/gvps/editTask/{gtaskId}/switchIns
+    kickOffStream: http://[$IP]/${migu.version}/gvps/editTask/{gtaskId}/mixIns/{id}
+    setWaterMark: http://[$IP]/${migu.version}/gvps/task/{gtaskId}/marks
+    updateWaterMark: http://[$IP]/${migu.version}/gvps/task/{gtaskId}/marks/{markId}
+    delWaterMark: http://[$IP]/${migu.version}/gvps/task/{gtaskId}/marks/{markId}
+    getWaterMark: http://[$IP]/${migu.version}/gvps/task/{gtaskId}/marks
+    contentControl: http://[$IP]/${migu.version}/gvps/editTask/{gtaskId}/contentControl
+    mixStreamStatus: http://[$IP]/${migu.version}/gvps/task/status
+    isTest: true

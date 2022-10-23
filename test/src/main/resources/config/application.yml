@@ -1,0 +1,4 @@
+server:
+  port: 3344
+ticketAuthentication:
+  url: http://120.204.115.144:23200
