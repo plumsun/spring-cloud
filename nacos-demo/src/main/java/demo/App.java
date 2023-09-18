@@ -5,14 +5,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
- * @description:
- * @date: 2022/4/23 17:25
- * @author: LiHaoHan
- * @program: com.demo
+ * The type App.
+ *
+ * @author LiHaoHan
  */
 @EnableDiscoveryClient
 @SpringBootApplication
 public class App {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
     }
