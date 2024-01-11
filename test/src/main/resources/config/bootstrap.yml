@@ -31,7 +31,8 @@ redisson:
   address2: redis://10.183.54.192:6380
   password: Xf@3aQx2_}y}
 
-
+logging:
+  config: classpath:config/logback.xml
 
 feign:
   client:

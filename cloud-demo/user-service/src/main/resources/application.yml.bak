@@ -9,12 +9,12 @@
 #    password: root
 #    driver-class-name: com.mysql.jdbc.Driver
 #mybatis:
-#  type-aliases-package: com.itheima.user.pojo
+#  type-aliases-package: com.demo.user.pojo
 #  configuration:
 #    map-underscore-to-camel-case: true
 #logging:
 #  level:
-#    com.itheima: debug
+#    com.demo: debug
 #eureka:
 #  client:
 #    service-url:

@@ -14,7 +14,7 @@ import java.util.HashMap;
  * @author: LiHaoHan
  * @program: org.feign
  */
-@FeignClient(name = "bk", url = "127.0.0.1:8003",configuration = FeignConfiguration.class)
+@FeignClient(name = "bk", url = "127.0.0.1:8003", configuration = FeignConfiguration.class)
 public interface TestRemote {
 
     @PostMapping("/excel/demo")

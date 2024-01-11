@@ -1,11 +1,12 @@
 package com.migu.remote.fallback;
 
-import com.migu.gvpcore.util.LogUtil;
 import com.migu.remote.SSORemote;
 import feign.hystrix.FallbackFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 
+@Slf4j
 @Component
 public class SSORemoteHystrix implements FallbackFactory<SSORemote> {
 
@@ -14,7 +15,7 @@ public class SSORemoteHystrix implements FallbackFactory<SSORemote> {
         return new SSORemote() {
             @Override
             public String serviceValidate(String service, String ticket, String format) {
-                LogUtil.error(throwable, "service:" + service + "ticket:" + ticket + "format:" + format);
+                log.error("service:{} ticket:{} format:{}", service, ticket, format, throwable);
                 return null;
             }
 
