@@ -1,12 +1,11 @@
 package com.migu;
 
-import com.migu.gvpcore.config.FeignClientConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
-@EnableFeignClients(defaultConfiguration = FeignClientConfig.class)
+@EnableFeignClients
 @SpringBootApplication
 public class SupportApplicationV1 {
 

@@ -51,11 +51,15 @@
             <version>2.2.5.RELEASE</version>
         </dependency>
 
-        <!--超高清日志打印-->
         <dependency>
-            <groupId>com.migu.gvp</groupId>
-            <artifactId>gvpcore</artifactId>
-            <version>1.0.1</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--日志-->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
         </dependency>
 
         <dependency>
