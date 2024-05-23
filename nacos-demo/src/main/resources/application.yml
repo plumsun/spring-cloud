@@ -13,5 +13,124 @@ spring:
         password: nacos
         server-addr: localhost:8848
         file-extension: yaml
+  activemq:
+    broker-url: tcp://52.131.103.111:61616
+    user: admin
+    password: admin
+  sleuth:
+    messaging:
+      jms:
+        enabled: false
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  jackson:
+    mapper:
+      accept-case-insensitive-properties: true
+  datasource:
+    druid:
+      stat-view-servlet:
+        enabled: true
+        loginUsername: admin
+        loginPassword: 123456
+    dynamic:
+      druid:
+        initial-size: 5
+        min-idle: 5
+        maxActive: 20
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: SELECT 1 FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        filters: stat,slf4j
+        connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
+      datasource:
+        master:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://nsfainterface.mysql.database.chinacloudapi.cn:3306/nsfa?useUnicode=true&characterEncoding=utf8&useSSL=true&requireSSL=true&useTimezone=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&rewriteBatchedStatements=true&allowMultiQueries=true
+          username: chenxj@nsfainterface
+          password: Sharepoint@admin
+        slave:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://nsfainterface.mysql.database.chinacloudapi.cn:3306/nsfa?useUnicode=true&characterEncoding=utf8&useSSL=true&requireSSL=true&useTimezone=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&rewriteBatchedStatements=true&allowMultiQueries=true
+          username: chenxj@nsfainterface
+          password: Sharepoint@admin
 server:
   port: 8004
+
+
+feign:
+  hystrix:
+    enabled: true
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: true
+  client:
+    config:
+      feignName:
+        connectTimeout: 130000
+        readTimeout: 120000
+  compression:
+    request:
+      enabled: false
+    response:
+      enabled: false
+hystrix:
+  threadpool:
+    default:
+      coreSize: 1000
+      maxQueueSize: 2000
+  command:
+    default:
+      circuitBreaker:
+        requestVolumeThreshold: 50
+      execution:
+        isolation:
+          semaphore:
+            maxConcurrentRequests: 2000
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 2000
+  shareSecurityContext: true
+ribbon:
+  ReadTimeout: 120000
+  ConnectTimeout: 130000
+
+mybatis-plus:
+  configuration:
+    call-setters-on-nulls: true
+    # 搜索指定包别名
+  type-aliases-package: om.ebest.nsfa.service.store
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapper-locations: classpath:mapper/**/*.xml
+
+# excel 导出配置
+file:
+  export:
+    heads:
+      - VisitPlan
+      - VisitRoute
+      - VisitLogDetail
+      - RebateBalance
+      - CreditBalance
+      - PhotoList
+      - Asset
+      - OrderView
+      - FreeDrink
+      - ActivityExecution
+      - Person
+      - CustomerStore
+      - RouteTarget
+    dataId: excel_export.json
+    group: DEFAULT_GROUP
+    headRowHeight: 20
+    contentRowHeight: 15
+    headFontSize: 11
+    columnWidth: 20

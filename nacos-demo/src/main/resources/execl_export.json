@@ -1,0 +1,1264 @@
+{
+  "VisitPlan": [
+    [
+      {
+        "colum": "Business Partner",
+        "property": "storeCode"
+      }
+    ],
+    [
+      {
+        "colum": "English Name",
+        "property": "englishName"
+      }
+    ],
+    [
+      {
+        "colum": "Local Name",
+        "property": "localName"
+      }
+    ],
+    [
+      {
+        "colum": "Visit Route",
+        "property": "routeNo"
+      }
+    ],
+    [
+      {
+        "colum": "Visiting Frequency",
+        "property": "frequence"
+      }
+    ],
+    [
+      {
+        "colum": "First Visit Date",
+        "property": "visitDate"
+      }
+    ],
+    [
+      {
+        "colum": "Is Deleted",
+        "property": "isDeleted"
+      }
+    ],
+    [
+      {
+        "colum": "Updated Time",
+        "property": "lastModifiedTime"
+      }
+    ]
+  ],
+  "VisitRoute": [
+    [
+      {
+        "colum": "Business Partner",
+        "property": "storeCode"
+      }
+    ],
+    [
+      {
+        "colum": "English Name",
+        "property": "englishName"
+      }
+    ],
+    [
+      {
+        "colum": "Local Name",
+        "property": "localName"
+      }
+    ],
+    [
+      {
+        "colum": "Visit Route",
+        "property": "routeNo"
+      }
+    ],
+    [
+      {
+        "colum": "Is Deleted",
+        "property": "isDeleted"
+      }
+    ],
+    [
+      {
+        "colum": "Update Time",
+        "property": "lastModifiedTime"
+      }
+    ]
+  ],
+  "VisitLogDetail": [
+    [
+      {
+        "colum": "Visit Log NO",
+        "property": "visitID"
+      }
+    ],
+    [
+      {
+        "colum": "Business Partner",
+        "property": "storeCode"
+      }
+    ],
+    [
+      {
+        "colum": "English Name",
+        "property": "englishName"
+      }
+    ],
+    [
+      {
+        "colum": "Local Name",
+        "property": "localName"
+      }
+    ],
+    [
+      {
+        "colum": "Visit Route",
+        "property": "routeNo"
+      }
+    ],
+    [
+      {
+        "colum": "Sales Structure",
+        "property": "companyCode"
+      }
+    ],
+    [
+      {
+        "colum": "Unsuccessful Visit Follow Up Or Not",
+        "property": "isUnusualVisits"
+      }
+    ],
+    [
+      {
+        "colum": "Planned or Not",
+        "property": "isOnRoute"
+      }
+    ],
+    [
+      {
+        "colum": "Visited or not",
+        "property": "visitStatus"
+      }
+    ],
+    [
+      {
+        "colum": "Check In Type",
+        "property": "signInType"
+      }
+    ],
+    [
+      {
+        "colum": "Distance(m)",
+        "property": "radius"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Address",
+        "property": "storeEnglishAddress"
+      }
+    ],
+    [
+      {
+        "colum": "Check in Address",
+        "property": "signInAddress"
+      }
+    ],
+    [
+      {
+        "colum": "Check in Latitude",
+        "property": "inLatitude"
+      }
+    ],
+    [
+      {
+        "colum": "Check in Longitude",
+        "property": "inLongitude"
+      }
+    ],
+    [
+      {
+        "colum": "Check IN time【acquire GPS time】",
+        "property": "signInTime"
+      }
+    ],
+    [
+      {
+        "colum": "Entry Time",
+        "property": "timeIn"
+      }
+    ],
+    [
+      {
+        "colum": "Leave Time",
+        "property": "timeOut"
+      }
+    ],
+    [
+      {
+        "colum": "Duration In Outlet【H：Min:Second】",
+        "property": "duration"
+      }
+    ],
+    [
+      {
+        "colum": "Create Time",
+        "property": "createTime"
+      }
+    ]
+  ],
+  "RebateBalance": [
+    [
+      {
+        "colum": "Customer Code",
+        "property": "storeCode"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Name",
+        "property": "englishName"
+      }
+    ],
+    [
+      {
+        "colum": "Sales Route",
+        "property": "salesRoute"
+      }
+    ],
+    [
+      {
+        "colum": "GT Channel",
+        "property": "gtChannelName"
+      }
+    ],
+    [
+      {
+        "colum": "KAC Code",
+        "property": "kaCode"
+      }
+    ],
+    [
+      {
+        "colum": "KAC Name",
+        "property": "kaName"
+      }
+    ],
+    [
+      {
+        "colum": "Rebate Agreement Item Number",
+        "property": "rebateAgreementItemNumber"
+      }
+    ],
+    [
+      {
+        "colum": "Block Indicator",
+        "property": "isBlock"
+      }
+    ],
+    [
+      {
+        "colum": "Opening Rebate Bal",
+        "property": "rebateBalanceAmount"
+      }
+    ],
+    [
+      {
+        "colum": "Used Rebate Before Settlement",
+        "property": "orderReleasedAmountBeforeBilling"
+      }
+    ],
+    [
+      {
+        "colum": "Rebate Release End Time",
+        "property": "rebateReleaseEndTime"
+      }
+    ],
+    [
+      {
+        "colum": "Rmark",
+        "property": "remark"
+      }
+    ],
+    [
+      {
+        "colum": "Rebate Agreement Itme Description",
+        "property": "rebateAgreementItemDescription"
+      }
+    ],
+    [
+      {
+        "colum": "Rebate Balance Before Settlement",
+        "property": "rebateBalanceBeforeSettlement"
+      }
+    ],
+    [
+      {
+        "colum": "Created At",
+        "property": "createTime"
+      }
+    ],
+    [
+      {
+        "colum": "Updated At",
+        "property": "lastModifiedTime"
+      }
+    ]
+  ],
+  "CreditBalance": [
+    [
+      {
+        "colum": "Company Code",
+        "property": "companyCode"
+      }
+    ],
+    [
+      {
+        "colum": "Sales Route",
+        "property": "salesRoute"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Number",
+        "property": "storeCode"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Name",
+        "property": "englishName"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Number(Bill To)",
+        "property": "billTo"
+      }
+    ],
+    [
+      {
+        "colum": "GT Channel",
+        "property": "gtChannelName"
+      }
+    ],
+    [
+      {
+        "colum": "KAC Code",
+        "property": "kaCode"
+      }
+    ],
+    [
+      {
+        "colum": "KAC Name",
+        "property": "kaName"
+      }
+    ],
+    [
+      {
+        "colum": "Credit Segment",
+        "property": "creditSgment"
+      }
+    ],
+    [
+      {
+        "colum": "Credit Limit",
+        "property": "creditLimit"
+      }
+    ],
+    [
+      {
+        "colum": "Payment Term",
+        "property": "payTerm"
+      }
+    ],
+    [
+      {
+        "colum": "Bank Guarantee",
+        "property": "bankGuarantee"
+      }
+    ],
+    [
+      {
+        "colum": "AR Amount",
+        "property": "aramt"
+      }
+    ],
+    [
+      {
+        "colum": "Created At",
+        "property": "createTime"
+      }
+    ],
+    [
+      {
+        "colum": "Updated At",
+        "property": "lastModifiedTime"
+      }
+    ]
+  ],
+  "PhotoList": [
+    [
+      {
+        "colum": "Market",
+        "property": "market"
+      }
+    ],
+    [
+      {
+        "colum": "Photo No",
+        "property": "photoNo"
+      }
+    ],
+    [
+      {
+        "colum": "File Name",
+        "property": "fileName"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Code",
+        "property": "storeCode"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Name EN",
+        "property": "storeEnglishName"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Name Local",
+        "property": "storeLocalName"
+      }
+    ],
+    [
+      {
+        "colum": "SalesRoute",
+        "property": "route"
+      }
+    ],
+    [
+      {
+        "colum": "Create At",
+        "property": "createTime"
+      }
+    ],
+    [
+      {
+        "colum": "Updated At",
+        "property": "lastModifiedTime"
+      }
+    ],
+    [
+      {
+        "colum": "Credit Segment",
+        "property": "creditSgment"
+      }
+    ],
+    [
+      {
+        "colum": "Photo Source",
+        "property": "fileType"
+      }
+    ],
+    [
+      {
+        "colum": "Activity Code",
+        "property": "activityCode"
+      }
+    ],
+    [
+      {
+        "colum": "Activity Name",
+        "property": "activityName"
+      }
+    ],
+    [
+      {
+        "colum": "Task Code",
+        "property": "taskCode"
+      }
+    ],
+    [
+      {
+        "colum": "Task Name",
+        "property": "taskTitle"
+      }
+    ],
+    [
+      {
+        "colum": "Question",
+        "property": "question"
+      }
+    ],
+    [
+      {
+        "colum": "Order Code",
+        "property": "orderCode"
+      }
+    ],
+    [
+      {
+        "colum": "Photo Link",
+        "property": "url"
+      }
+    ]
+  ],
+  "Asset": [
+    [
+      {
+        "colum": "Company Code",
+        "property": "companyCode"
+      }
+    ],
+    [
+      {
+        "colum": "Plant",
+        "property": "plant"
+      }
+    ],
+    [
+      {
+        "colum": "Storage Location",
+        "property": "storageLocationCode"
+      }
+    ],
+    [
+      {
+        "colum": "Equipment Serial Number",
+        "property": "equipmentSerialNumber"
+      }
+    ],
+    [
+      {
+        "colum": "Model Name",
+        "property": "modelName"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Number",
+        "property": "outletNumber"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet English Name",
+        "property": "outletEnglishName"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Local Name",
+        "property": "outletLocalName"
+      }
+    ],
+    [
+      {
+        "colum": "KAC Code",
+        "property": "kaCode"
+      }
+    ],
+    [
+      {
+        "colum": "KAC Name",
+        "property": "kaName"
+      }
+    ],
+    [
+      {
+        "colum": "SDR Route",
+        "property": "sDRRoute"
+      }
+    ],
+    [
+      {
+        "colum": "Installation Date",
+        "property": "installationDate"
+      }
+    ],
+    [
+      {
+        "colum": "Equipment Status",
+        "property": "equipmentStatus"
+      }
+    ],
+    [
+      {
+        "colum": "ABC Indicator",
+        "property": "aBCIndicator"
+      }
+    ],
+    [
+      {
+        "colum": "Room",
+        "property": "room"
+      }
+    ],
+    [
+      {
+        "colum": "Acquisition Date",
+        "property": "acquisitionDate"
+      }
+    ],
+    [
+      {
+        "colum": "Tech Ident No.",
+        "property": "techIdentNo"
+      }
+    ],
+    [
+      {
+        "colum": "Key Number",
+        "property": "keyNumber"
+      }
+    ],
+    [
+      {
+        "colum": "Advertisement Pattern Number",
+        "property": "advertisementPatternNumber"
+      }
+    ],
+    [
+      {
+        "colum": "Advertisement Description",
+        "property": "advertisementDescription"
+      }
+    ],
+    [
+      {
+        "colum": "Start Date",
+        "property": "startDate"
+      }
+    ],
+    [
+      {
+        "colum": "End Date",
+        "property": "endDate"
+      }
+    ],
+    [
+      {
+        "colum": "Purchased Dept.",
+        "property": "purchasedDept"
+      }
+    ],
+    [
+      {
+        "colum": "Equipment Location",
+        "property": "equipmentLocation"
+      }
+    ],
+    [
+      {
+        "colum": "FSV Indicator",
+        "property": "fSVIndicator"
+      }
+    ],
+    [
+      {
+        "colum": "Coding  system",
+        "property": "codingSystem"
+      }
+    ],
+    [
+      {
+        "colum": "Warrany start date",
+        "property": "warranyStartDate"
+      }
+    ],
+    [
+      {
+        "colum": "Warrany end date",
+        "property": "warranyEndDate"
+      }
+    ],
+    [
+      {
+        "colum": "Equipment Types",
+        "property": "equipmentTypes"
+      }
+    ],
+    [
+      {
+        "colum": "Created At",
+        "property": "createdAt"
+      }
+    ],
+    [
+      {
+        "colum": "Updated At",
+        "property": "updateAt"
+      }
+    ]
+  ],
+  "OrderView": [
+    [
+      {
+        "colum": "Order NO. SAP",
+        "property": "sapOrderNo"
+      }
+    ],
+    [
+      {
+        "colum": "Order NO. Non- SAP",
+        "property": "orderNo"
+      }
+    ],
+    [
+      {
+        "colum": "Business Partner",
+        "property": "customerCode"
+      }
+    ],
+    [
+      {
+        "colum": "English Name",
+        "property": "englishName"
+      }
+    ],
+    [
+      {
+        "colum": "Local Name",
+        "property": "localName"
+      }
+    ],
+    [
+      {
+        "colum": "Order Type",
+        "property": "orderTypeDesc"
+      }
+    ],
+    [
+      {
+        "colum": "Order Source",
+        "property": "orderSourceDesc"
+      }
+    ],
+    [
+      {
+        "colum": "Status",
+        "property": "orderStatusDesc"
+      }
+    ],
+    [
+      {
+        "colum": "Route",
+        "property": "routeNo"
+      }
+    ],
+    [
+      {
+        "colum": "Deleted/Block  Reason",
+        "property": "valueText"
+      }
+    ],
+    [
+      {
+        "colum": "Delivery date",
+        "property": "deliveryDate"
+      }
+    ],
+    [
+      {
+        "colum": "SAP Submit time",
+        "property": "sapCreateTime"
+      }
+    ],
+    [
+      {
+        "colum": "Last Update time",
+        "property": "lastModifiedTime"
+      }
+    ],
+    [
+      {
+        "colum": "Create time",
+        "property": "createTime"
+      }
+    ],
+    [
+      {
+        "colum": "Submit Note",
+        "property": "submitNote"
+      }
+    ],
+    [
+      {
+        "colum": "Order Currency",
+        "property": "documentCurrency"
+      }
+    ],
+    [
+      {
+        "colum": "Tax Amout",
+        "property": "taxAmount"
+      }
+    ],
+    [
+      {
+        "colum": "Total Product Amount",
+        "property": "totalPrice"
+      }
+    ],
+    [
+      {
+        "colum": "logics anddistribution Cost",
+        "property": "logicsCostAmount"
+      }
+    ],
+    [
+      {
+        "colum": "Total Deposit",
+        "property": "depositTotal"
+      }
+    ],
+    [
+      {
+        "colum": "stair fee",
+        "property": "stairFee"
+      }
+    ],
+    [
+      {
+        "colum": "Rebate Release Amount",
+        "property": "rebateAmount"
+      }
+    ],
+    [
+      {
+        "colum": "InClude Deposit",
+        "property": "includeDeposit"
+      }
+    ],
+    [
+      {
+        "colum": "Product Code",
+        "property": "productCode"
+      }
+    ],
+    [
+      {
+        "colum": "English Name",
+        "property": "shortNameEn"
+      }
+    ],
+    [
+      {
+        "colum": "Local Name",
+        "property": "shortNameCn"
+      }
+    ],
+    [
+      {
+        "colum": "Quality【CS/EA】",
+        "property": "orderQty"
+      }
+    ],
+    [
+      {
+        "colum": "Customer Price",
+        "property": "cpDeposit"
+      }
+    ],
+    [
+      {
+        "colum": "Net Unit Price",
+        "property": "invoiceNetPrice"
+      }
+    ],
+    [
+      {
+        "colum": "Basic Net Price After Promo Code",
+        "property": "freeGoodCost"
+      }
+    ],
+    [
+      {
+        "colum": "Deposit",
+        "property": "guaranteeDeposit"
+      }
+    ]
+  ],
+  "FreeDrink": [
+    [
+      {
+        "colum": "Business Partner【Outlet Code】",
+        "property": "storeCode"
+      }
+    ],
+    [
+      {
+        "colum": "English Name",
+        "property": "englishName"
+      }
+    ],
+    [
+      {
+        "colum": "Local Name",
+        "property": "localName"
+      }
+    ],
+    [
+      {
+        "colum": "Sales Route",
+        "property": "routeNo"
+      }
+    ],
+    [
+      {
+        "colum": "GT Channel",
+        "property": "gtChannelName"
+      }
+    ],
+    [
+      {
+        "colum": "Sub-Channel",
+        "property": "subChannel"
+      }
+    ],
+    [
+      {
+        "colum": "KAC Code",
+        "property": "kaCode"
+      }
+    ],
+    [
+      {
+        "colum": "KAC Name",
+        "property": "kaName"
+      }
+    ],
+    [
+      {
+        "colum": "Activity ID",
+        "property": "activityId"
+      }
+    ],
+    [
+      {
+        "colum": "Activity  Description",
+        "property": "activityDescription"
+      }
+    ],
+    [
+      {
+        "colum": "Product Number",
+        "property": "productNumber"
+      }
+    ],
+    [
+      {
+        "colum": "Product Name",
+        "property": "productEnglishName"
+      }
+    ],
+    [
+      {
+        "colum": "Vaild From Date",
+        "property": "startDate"
+      }
+    ],
+    [
+      {
+        "colum": "Vaild To Date",
+        "property": "endDate"
+      }
+    ],
+    [
+      {
+        "colum": "Full Quantity【CS】",
+        "property": "fullQuantity"
+      }
+    ],
+    [
+      {
+        "colum": "Balance Quantity【CS】",
+        "property": "balanceQuantity"
+      }
+    ],
+    [
+      {
+        "colum": "Today Order Quantity【CS】",
+        "property": "todayOrderQuantity"
+      }
+    ],
+    [
+      {
+        "colum": "Left【CS】",
+        "property": "left"
+      }
+    ],
+    [
+      {
+        "colum": "Created At",
+        "property": "createTime"
+      }
+    ],
+    [
+      {
+        "colum": "Updated At",
+        "property": "updateTime"
+      }
+    ]
+  ],
+  "ActivityExecution": [
+    [
+      {
+        "colum": "Activity Code",
+        "property": "activityCode"
+      }
+    ],
+    [
+      {
+        "colum": "Activity Name",
+        "property": "activityName"
+      }
+    ],
+    [
+      {
+        "colum": "Must Feedback or not",
+        "property": "feedback"
+      }
+    ],
+    [
+      {
+        "colum": "Number of cycles",
+        "property": "sort"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Code",
+        "property": "customerCode"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Name -EN",
+        "property": "customerNameEn"
+      }
+    ],
+    [
+      {
+        "colum": "Outlet Name -Local",
+        "property": "customerNameCn"
+      }
+    ],
+    [
+      {
+        "colum": "Creator",
+        "property": "createBy"
+      }
+    ],
+    [
+      {
+        "colum": "Create  time",
+        "property": "createTime"
+      }
+    ],
+    [
+      {
+        "colum": "execution time",
+        "property": "trackTime"
+      }
+    ],
+    [
+      {
+        "colum": "Question Title",
+        "property": "questionTitle"
+      }
+    ],
+    [
+      {
+        "colum": "Question Answer",
+        "property": "content"
+      }
+    ]
+  ],
+  "Person": [
+    [
+      {
+        "colum": "Name",
+        "property": "userName"
+      }
+    ],
+    [
+      {
+        "colum": "User Code",
+        "property": "userCode"
+      }
+    ],
+    [
+      {
+        "colum": "AD domain name",
+        "property": "domainAccount"
+      }
+    ],
+    [
+      {
+        "colum": "Sales Structure",
+        "property": "orgNames"
+      }
+    ],
+    [
+      {
+        "colum": "Position",
+        "property": "positionDesc"
+      }
+    ],
+    [
+      {
+        "colum": "Route",
+        "property": "routeNo"
+      }
+    ],
+    [
+      {
+        "colum": "SFA Account",
+        "property": "domainAccount"
+      }
+    ],
+    [
+      {
+        "colum": "superior leaders",
+        "property": "lineManager"
+      }
+    ],
+    [
+      {
+        "colum": "Status",
+        "property": "isDeleted"
+      }
+    ],
+    [
+      {
+        "colum": "SFA Account Is Blocked",
+        "property": "isLocked"
+      }
+    ]
+  ],
+  "CustomerStore": [
+    [
+      {
+        "colum": "Outlet",
+        "property": "code"
+      }
+    ],
+    [
+      {
+        "colum": "Name (Eng)",
+        "property": "englishName"
+      }
+    ],
+    [
+      {
+        "colum": "Name (Local)",
+        "property": "localName"
+      }
+    ],
+    [
+      {
+        "colum": "SalesRoute",
+        "property": "salesRoute"
+      }
+    ],
+    [
+      {
+        "colum": "Delivery Route",
+        "property": "deliveryRoute"
+      }
+    ],
+    [
+      {
+        "colum": "Address Local",
+        "property": "shortAddressLine1"
+      }
+    ],
+    [
+      {
+        "colum": "KA Code",
+        "property": "kACode"
+      }
+    ],
+    [
+      {
+        "colum": "KA Name",
+        "property": "kADesc"
+      }
+    ],
+    [
+      {
+        "colum": "Bill To",
+        "property": "billTo"
+      }
+    ],
+    [
+      {
+        "colum": "GT Channel",
+        "property": "gTChannelDesc"
+      }
+    ],
+    [
+      {
+        "colum": "Channel",
+        "property": "channelDesc"
+      }
+    ],
+    [
+      {
+        "colum": "Business Segment",
+        "property": "marketSegmentDesc"
+      }
+    ],
+    [
+      {
+        "colum": "Status",
+        "property": "statusDesc"
+      }
+    ]
+  ],
+  "RouteTarget": [
+    [
+      {
+        "colum": "Route",
+        "property": "routeNo"
+      }
+    ],
+    [
+      {
+        "colum": "Period",
+        "property": "period"
+      }
+    ],
+    [
+      {
+        "colum": "TargetType",
+        "property": "targetTypeDesc"
+      }
+    ],
+    [
+      {
+        "colum": "Target",
+        "property": "target"
+      }
+    ],
+    [
+      {
+        "colum": "Status",
+        "property": "isDeleted"
+      }
+    ],
+    [
+      {
+        "colum": "Create Time",
+        "property": "createTime"
+      }
+    ]
+  ]
+}
